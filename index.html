@@ -1,98 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manoj Maddirala | IT Audit & Controls</title>
-<meta name="description" content="Manoj Maddirala — IT Audit, ITGC, ITAC, SOX Compliance and Internal Audit portfolio.">
-<meta name="author" content="Manoj Maddirala">
-<meta property="og:title" content="Manoj Maddirala | IT Audit & Controls">
-<meta property="og:description" content="IT Audit • ITGC • ITAC • SOX Compliance • Internal Audit">
-<meta property="og:url" content="https://manojkumarmaddirala.github.io/">
+<meta name="description" content="Manoj Maddirala — IT Audit, ITGC, ITAC, SOX Compliance and Internal Audit.">
 <style>
-:root{--bg:#050b14;--panel:#0b1421;--panel2:#0e1b2c;--line:#1d3047;--text:#edf6ff;--muted:#9bb0c6;--cyan:#37d5ff;--blue:#4387ff;--green:#45e0a3;--amber:#ffca64}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 Inter,Segoe UI,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(55,213,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(55,213,255,.018) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
-header{position:sticky;top:0;z-index:50;background:rgba(5,11,20,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;letter-spacing:.7px}.logo i{color:var(--cyan);font-style:normal}.navlinks{display:flex;gap:22px;color:#b9c9da;font-size:13px}.navlinks a:hover{color:var(--cyan)}
-.hero{padding:76px 0 45px}.hero-grid{display:grid;grid-template-columns:1.35fr .75fr;gap:38px;align-items:center}.eyebrow{font:800 11px/1 monospace;color:var(--cyan);letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1;letter-spacing:-2.8px;margin:15px 0}.hero h1 span{color:var(--cyan)}.hero h2{font-size:19px;margin:0;color:#cbd9e8}.hero p{max-width:710px;color:var(--muted);font-size:16px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{padding:11px 15px;border:1px solid #29415d;border-radius:9px;background:#0d1b2c;font-weight:800;font-size:13px}.btn.primary{background:linear-gradient(135deg,#1e9eff,#31d5ff);border:0;color:#03111e}.btn:hover{transform:translateY(-1px)}
-.dash{background:linear-gradient(145deg,#0d1b2b,#08111d);border:1px solid #203650;border-radius:18px;padding:18px;box-shadow:0 25px 70px rgba(0,0,0,.25)}.dashbar{display:flex;justify-content:space-between;align-items:center;color:#8fa6bd;font:12px monospace;margin-bottom:16px}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px}.dash h3{margin:0 0 15px}.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini div{border:1px solid var(--line);background:#091522;border-radius:11px;padding:14px}.mini b{font-size:22px;display:block;color:#fff}.mini span{color:var(--muted);font-size:11px}.meter{margin-top:13px}.meter label{display:flex;justify-content:space-between;font-size:11px;color:#a8bdd0}.bar{height:6px;background:#17283b;border-radius:9px;margin-top:6px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:9px}
-section{padding:62px 0}.section-top{margin-bottom:24px}.kicker{font:800 11px monospace;color:var(--cyan);letter-spacing:2px;text-transform:uppercase}.section-top h2{font-size:32px;line-height:1.1;margin:8px 0}.lead{color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:21px}.card:hover{border-color:#31557a}.num{font:900 11px monospace;color:var(--cyan)}.card h3{margin:8px 0;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.tag{font:700 11px monospace;color:#b8d5ee;background:#0c1e31;border:1px solid #203b58;padding:5px 8px;border-radius:999px}
-.timeline{display:grid;gap:13px}.role{display:grid;grid-template-columns:180px 1fr;gap:20px;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:21px}.date{font:800 11px monospace;color:var(--cyan)}.role h3{margin:0 0 3px}.company{color:#c1d0df;font-weight:700}.role ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:13px}
-.case{position:relative}.case .status{position:absolute;right:18px;top:18px;font:800 10px monospace;color:var(--green)}.case p{padding-right:45px}.case a{display:inline-block;margin-top:15px;color:var(--cyan);font-size:12px;font-weight:800}
-.method{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.step{border:1px solid var(--line);background:var(--panel);padding:17px;border-radius:13px}.step strong{display:block;color:var(--cyan);font:900 12px monospace}.step b{display:block;margin:8px 0 4px}.step span{font-size:12px;color:var(--muted)}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact .card{min-height:150px}.contact a{color:var(--cyan)}
-footer{padding:35px 0;border-top:1px solid var(--line);color:#7890a8;font-size:12px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.method{grid-template-columns:1fr 1fr}.navlinks{display:none}}
-@media(max-width:560px){.grid,.contact,.method{grid-template-columns:1fr}.role{grid-template-columns:1fr}.hero{padding-top:55px}.hero h1{font-size:45px}}
+:root{
+ --navy:#071426;--navy2:#0b1d35;--blue:#146cff;--cyan:#24c8ff;
+ --text:#142235;--muted:#65758b;--line:#e4eaf1;--bg:#f6f9fc;--white:#fff;
+ --green:#19a974;--shadow:0 18px 55px rgba(13,39,72,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+
+/* NAV */
+.nav{height:72px;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:18px;font-weight:900;letter-spacing:-.4px}.logo span{color:var(--blue)}
+.links{display:flex;gap:27px;font-size:13px;font-weight:700;color:#56677d}
+.links a:hover{color:var(--blue)}
+.nav-btn{background:var(--navy);color:#fff;padding:10px 15px;border-radius:9px;font-size:12px;font-weight:800}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#061326 0%,#0a2442 55%,#0c3963 100%);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-160px;top:-180px;background:radial-gradient(circle,rgba(36,200,255,.23),transparent 68%)}
+.hero:after{content:"";position:absolute;left:-180px;bottom:-260px;width:600px;height:600px;border-radius:50%;border:1px solid rgba(255,255,255,.06)}
+.hero-inner{padding:88px 0 76px;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#67d7ff;font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.eyebrow:before{content:"";width:28px;height:2px;background:var(--cyan)}
+h1{font-size:clamp(46px,6vw,76px);line-height:.98;letter-spacing:-3.5px;margin:18px 0}
+.hero h1 span{color:#55d4ff}
+.hero-sub{font-size:21px;font-weight:650;color:#dceaf7;margin-bottom:18px}
+.hero-copy{max-width:700px;color:#b9cce0;font-size:16px}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:9px;font-size:13px;font-weight:850;border:1px solid rgba(255,255,255,.18)}
+.btn-primary{background:#fff;color:#0a3c75}.btn-outline{color:#fff;background:rgba(255,255,255,.06)}
+.btn-outline:hover{background:rgba(255,255,255,.12)}
+.profile{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:24px;box-shadow:0 28px 80px rgba(0,0,0,.20)}
+.profile-head{display:flex;gap:14px;align-items:center;margin-bottom:22px}
+.avatar{width:62px;height:62px;border-radius:16px;background:linear-gradient(135deg,#1b82ff,#24c8ff);display:grid;place-items:center;font-size:21px;font-weight:950}
+.profile small{color:#9fb8d0}.profile h3{font-size:17px}.row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.13);padding:13px 0;color:#a9bfd5;font-size:12px}.row b{color:#fff;font-size:12px}
+
+/* GENERAL */
+section{padding:78px 0}
+.section-head{margin-bottom:32px}.label{color:var(--blue);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:37px;letter-spacing:-1.4px;line-height:1.1;margin:7px 0 10px}.lead{color:var(--muted);max-width:760px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 8px 28px rgba(14,42,72,.045)}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);transition:.25s}
+.icon{width:44px;height:44px;border-radius:12px;background:#edf5ff;color:var(--blue);display:grid;place-items:center;font-size:13px;font-weight:900;margin-bottom:17px}
+.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:13px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{font-size:11px;font-weight:800;color:#14569e;background:#edf5ff;border:1px solid #d7e8fa;border-radius:999px;padding:6px 9px}
+
+/* ABOUT */
+.about{background:#fff}.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}
+.number{border:1px solid var(--line);border-radius:13px;padding:18px}.number strong{font-size:24px;color:var(--blue);display:block}.number span{font-size:11px;color:var(--muted);font-weight:700}
+
+/* EXPERIENCE */
+.dark{background:var(--navy);color:#fff}.dark .label{color:#63d5ff}.dark .lead{color:#a9bfd4}
+.timeline{display:grid;gap:15px}.role{display:grid;grid-template-columns:185px 1fr;gap:25px;background:#0b2039;border:1px solid #203d5d;border-radius:16px;padding:24px}.date{color:#62d4ff;font-size:11px;font-weight:900;letter-spacing:.7px}.role h3{font-size:19px}.company{color:#b9cce0;font-weight:700;margin:3px 0 9px}.role ul{padding-left:18px;color:#a9bdd2;font-size:13px}.role li{margin:4px 0}
+
+/* CONTROLS */
+.control-number{font-size:11px;font-weight:900;color:var(--blue);letter-spacing:1px}.control-title{margin-top:7px}
+
+/* PROCESS */
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.process-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px}.process-card b{display:block;color:var(--blue);font-size:11px}.process-card h3{font-size:16px;margin:8px 0 5px}.process-card p{font-size:12px;color:var(--muted)}
+
+/* PROJECTS */
+.projects{background:#f0f5fa}.project{position:relative;overflow:hidden}.project:before{content:"";position:absolute;right:-30px;top:-35px;width:100px;height:100px;border-radius:50%;background:#e8f3ff}.project-type{font-size:10px;color:var(--blue);font-weight:900;letter-spacing:1.3px;text-transform:uppercase}.project h3{margin:7px 0}.project-note{font-size:11px;color:#8392a5;margin-top:13px;font-weight:700}
+
+/* FRAMEWORKS */
+.framework{display:flex;align-items:center;gap:13px}.framework .icon{margin:0;width:40px;height:40px}
+
+/* CONTACT */
+.contact{background:linear-gradient(135deg,#071426,#0d2e50);color:#fff}.contact .lead{color:#b6c9dd}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{border:1px solid #244461;background:rgba(255,255,255,.05);border-radius:16px;padding:25px}.contact-card h3{margin-bottom:13px}.contact-card p{color:#b5c9dc;font-size:13px;margin:7px 0}.contact-card a{color:#63d5ff}
+
+/* FOOTER */
+footer{background:#04101e;color:#7e96ae;padding:28px 0;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* RESPONSIVE */
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.links{display:none}}
+@media(max-width:600px){section{padding:58px 0}.grid,.numbers,.contact-grid,.process{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:7px}h2{font-size:30px}.hero-inner{padding:65px 0}.hero h1{letter-spacing:-2px}.nav-btn{display:none}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="logo" href="#home">MANOJ<i>.AUDIT</i></a><nav class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#controls">Controls</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></div></header>
 
-<main id="home">
-<section class="hero"><div class="wrap hero-grid">
-<div>
-<div class="eyebrow">IT AUDIT / TECHNOLOGY RISK / CONTROLS</div>
-<h1>Audit the <span>controls.</span><br>Understand the risk.</h1>
-<h2>Manoj Maddirala — IT Audit &amp; Controls Professional</h2>
-<p>IT Audit | ITGC | ITAC | SOX Compliance | Internal Audit. Focused on access management, change management, control testing, risk assessment, control deficiencies and audit documentation.</p>
-<div class="actions"><a class="btn primary" href="Manoj_Maddirala_Resume_Revised.pdf">↳ Resume</a><a class="btn" href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">↳ Portfolio PDF</a><a class="btn" target="_blank" href="https://www.linkedin.com/in/manoj-kumar-maddirala-47537141/">↳ LinkedIn</a></div>
+<div class="nav">
+<div class="container nav-inner">
+<a class="logo" href="#top">MANOJ <span>MADDIRALA</span></a>
+<div class="links">
+<a href="#about">About</a><a href="#experience">Experience</a><a href="#controls">ITGC / ITAC</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
 </div>
-<div class="dash"><div class="dashbar"><span><i class="dot"></i>PROFILE STATUS</span><span>IT-AUDIT/01</span></div><h3>Control Coverage</h3><div class="mini"><div><b>3+</b><span>Years IT Experience</span></div><div><b>ITGC</b><span>Core Focus</span></div><div><b>ITAC</b><span>Automated Controls</span></div><div><b>SOX</b><span>Compliance</span></div></div><div class="meter"><label><span>Access Management</span><span>CORE</span></label><div class="bar"><i style="width:92%"></i></div></div><div class="meter"><label><span>Change Management</span><span>CORE</span></label><div class="bar"><i style="width:88%"></i></div></div><div class="meter"><label><span>Control Testing</span><span>CORE</span></label><div class="bar"><i style="width:90%"></i></div></div></div>
-</div></section>
+<a class="nav-btn" href="Manoj_Maddirala_Resume_Revised.pdf">Resume</a>
+</div>
+</div>
 
-<section id="about"><div class="wrap"><div class="section-top"><div class="kicker">01 / PROFILE</div><h2>Professional Snapshot</h2><p class="lead">A recruiter-focused portfolio that shows the audit areas I work with, how I approach testing, and the type of non-confidential work products I can demonstrate.</p></div><div class="grid">
-<div class="card"><div class="num">01</div><h3>IT General Controls</h3><p>Access to programs and data, program changes, program development and computer operations.</p><div class="tags"><span class="tag">APD</span><span class="tag">PGC</span><span class="tag">PGD</span><span class="tag">COP</span></div></div>
-<div class="card"><div class="num">02</div><h3>IT Application Controls</h3><p>Input, processing, output, interfaces and automated control considerations.</p><div class="tags"><span class="tag">INPUT</span><span class="tag">PROCESS</span><span class="tag">OUTPUT</span></div></div>
-<div class="card"><div class="num">03</div><h3>Audit &amp; Compliance</h3><p>SOX 404, internal audit, risk assessment, control testing, evidence evaluation and recommendations.</p><div class="tags"><span class="tag">SOX</span><span class="tag">RISK</span><span class="tag">TESTING</span></div></div>
-</div></div></section>
+<header class="hero" id="top">
+<div class="container hero-inner">
+<div>
+<div class="eyebrow">IT AUDIT • CONTROLS • COMPLIANCE</div>
+<h1>IT Audit &amp;<br><span>Controls</span> Professional</h1>
+<div class="hero-sub">IT Audit | ITGC | ITAC | SOX Compliance | Internal Audit</div>
+<p class="hero-copy">IT professional focused on ITGC and ITAC audit activities, access management, change management, control testing, risk assessment, control deficiencies and audit documentation.</p>
+<div class="actions">
+<a class="btn btn-primary" href="Manoj_Maddirala_Resume_Revised.pdf">View Resume</a>
+<a class="btn btn-outline" href="#projects">View Work</a>
+<a class="btn btn-outline" target="_blank" href="https://www.linkedin.com/in/manoj-kumar-maddirala-47537141/">LinkedIn ↗</a>
+</div>
+</div>
+<div class="profile">
+<div class="profile-head"><div class="avatar">MM</div><div><h3>Professional Profile</h3><small>IT Audit / ITGC / ITAC</small></div></div>
+<div class="row"><span>Current Role</span><b>Audit Executive</b></div>
+<div class="row"><span>Primary Focus</span><b>IT Controls</b></div>
+<div class="row"><span>Compliance</span><b>SOX 404</b></div>
+<div class="row"><span>Location</span><b>Mumbai, India</b></div>
+</div>
+</div>
+</header>
 
-<section id="experience"><div class="wrap"><div class="section-top"><div class="kicker">02 / EXPERIENCE</div><h2>Professional Experience</h2></div><div class="timeline">
-<article class="role"><div class="date">SEP 2025 — PRESENT</div><div><h3>Audit Executive</h3><div class="company">Chokshi &amp; Chokshi</div><ul><li>Conduct ITGC and ITAC audits across client engagements.</li><li>Evaluate access management, change controls, backup procedures and automated system controls.</li><li>Assess risk exposures, identify control deficiencies and support audit documentation.</li><li>Deliver actionable recommendations to strengthen compliance and mitigate risks.</li></ul></div></article>
+<section class="about" id="about">
+<div class="container">
+<div class="section-head"><div class="label">01 / ABOUT</div><h2>Controls. Risk. Assurance.</h2><p class="lead">I specialize in ITGC, ITAC and internal audit activities, supporting control testing, access reviews, change management assessments, audit documentation and risk-based recommendations.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">ITGC</div><h3>IT General Controls</h3><p>Access, program changes, program development and computer operations controls.</p><div class="tags"><span class="tag">APD</span><span class="tag">PGC</span><span class="tag">PGD</span><span class="tag">COP</span></div></div>
+<div class="card"><div class="icon">ITAC</div><h3>IT Application Controls</h3><p>Input, processing, output, interfaces and automated control considerations.</p><div class="tags"><span class="tag">INPUT</span><span class="tag">PROCESS</span><span class="tag">OUTPUT</span></div></div>
+<div class="card"><div class="icon">SOX</div><h3>Risk &amp; Compliance</h3><p>SOX 404, control testing, risk assessment, deficiencies and audit documentation.</p><div class="tags"><span class="tag">SOX 404</span><span class="tag">RISK</span><span class="tag">TESTING</span></div></div>
+</div>
+<div class="numbers">
+<div class="number"><strong>3+</strong><span>Years IT Experience</span></div>
+<div class="number"><strong>ITGC</strong><span>Core Audit Focus</span></div>
+<div class="number"><strong>ITAC</strong><span>Automated Controls</span></div>
+<div class="number"><strong>SOX</strong><span>Compliance Focus</span></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="experience">
+<div class="container">
+<div class="section-head"><div class="label">02 / EXPERIENCE</div><h2>Professional Experience</h2></div>
+<div class="timeline">
+<article class="role"><div class="date">SEP 2025 — PRESENT</div><div><h3>Audit Executive</h3><div class="company">Chokshi &amp; Chokshi</div><ul><li>Conduct ITGC and ITAC audits across client engagements.</li><li>Evaluate access management, change controls, backup procedures and automated system controls.</li><li>Collaborate with business and IT stakeholders to assess risk exposures and identify control deficiencies.</li><li>Perform control testing and support audit documentation.</li><li>Deliver actionable recommendations to strengthen compliance and mitigate risks.</li></ul></div></article>
 <article class="role"><div class="date">FEB 2023 — FEB 2025</div><div><h3>Data Analyst</h3><div class="company">Capgemini Technology Services India Limited</div><ul><li>Worked with a focus on ITGC, access control reviews and change management assessments.</li><li>Supported SOX and IT policy compliance through control testing.</li><li>Identified IT control gaps and supported risk mitigation activities.</li><li>Developed and troubleshot software using Python, Jenkins and Wireshark.</li></ul></div></article>
-</div></div></section>
+</div>
+</div>
+</section>
 
-<section id="controls"><div class="wrap"><div class="section-top"><div class="kicker">03 / CONTROL DOMAINS</div><h2>ITGC &amp; ITAC Control Map</h2><p class="lead">Organized as an audit workbench rather than a traditional resume list.</p></div><div class="grid">
-<div class="card"><div class="num">APD</div><h3>Access to Programs &amp; Data</h3><p>User administration, authentication, access reviews, privileged access, access rules and monitoring.</p></div>
-<div class="card"><div class="num">PGC</div><h3>Program Changes</h3><p>Authorization, development/testing, approvals, migration and emergency change considerations.</p></div>
-<div class="card"><div class="num">PGD</div><h3>Program Development</h3><p>Development methodology, design, testing, approval, implementation and data migration controls.</p></div>
-<div class="card"><div class="num">COP</div><h3>Computer Operations</h3><p>Job processing, backup/recovery, backup-media access and incident/problem management.</p></div>
-<div class="card"><div class="num">ITAC</div><h3>Application Controls</h3><p>Input validation, automated processing checks, output completeness/accuracy and interface controls.</p></div>
-<div class="card"><div class="num">SOX</div><h3>Control Testing</h3><p>Test of design, test of operating effectiveness, evidence review, exceptions and conclusions.</p></div>
-</div></div></section>
+<section id="controls">
+<div class="container">
+<div class="section-head"><div class="label">03 / CONTROL FRAMEWORK</div><h2>ITGC &amp; ITAC Capability</h2><p class="lead">Core control domains presented in an audit-ready structure.</p></div>
+<div class="grid">
+<div class="card"><div class="control-number">01 / APD</div><h3 class="control-title">Access to Programs &amp; Data</h3><p>User administration, authentication, access reviews, privileged access, access rules and monitoring.</p></div>
+<div class="card"><div class="control-number">02 / PGC</div><h3 class="control-title">Program Changes</h3><p>Authorization, development/testing, approvals, migration and emergency change considerations.</p></div>
+<div class="card"><div class="control-number">03 / PGD</div><h3 class="control-title">Program Development</h3><p>Development methodology, design, testing, approval, implementation and data migration controls.</p></div>
+<div class="card"><div class="control-number">04 / COP</div><h3 class="control-title">Computer Operations</h3><p>Job processing, backup/recovery, backup-media access and incident/problem management.</p></div>
+<div class="card"><div class="control-number">05 / ITAC</div><h3 class="control-title">Application Controls</h3><p>Input validation, automated processing checks, output completeness/accuracy and interface controls.</p></div>
+<div class="card"><div class="control-number">06 / TESTING</div><h3 class="control-title">Control Testing</h3><p>Inquiry, inspection, sampling, re-performance, test of design and test of operating effectiveness.</p></div>
+</div>
+</div>
+</section>
 
-<section><div class="wrap"><div class="section-top"><div class="kicker">04 / METHODOLOGY</div><h2>Audit Workflow</h2><p class="lead">A structured lifecycle from risk understanding through follow-up.</p></div><div class="method">
-<div class="step"><strong>01</strong><b>Plan</b><span>Scope, systems, risks and control objectives.</span></div>
-<div class="step"><strong>02</strong><b>Walkthrough</b><span>Understand process, owners and evidence.</span></div>
-<div class="step"><strong>03</strong><b>Test</b><span>Inquiry, inspection, sampling and re-performance.</span></div>
-<div class="step"><strong>04</strong><b>Evaluate</b><span>Assess exceptions and control effectiveness.</span></div>
-<div class="step"><strong>05</strong><b>Report</b><span>Document results, recommendations and follow-up.</span></div>
-</div></div></section>
+<section style="background:#fff">
+<div class="container">
+<div class="section-head"><div class="label">04 / AUDIT APPROACH</div><h2>From Risk to Evidence</h2><p class="lead">A structured approach to understanding controls, testing evidence and documenting results.</p></div>
+<div class="process">
+<div class="process-card"><b>01</b><h3>Plan</h3><p>Scope, risks, systems and control objectives.</p></div>
+<div class="process-card"><b>02</b><h3>Understand</h3><p>Walkthroughs, process owners and evidence.</p></div>
+<div class="process-card"><b>03</b><h3>Test</h3><p>Inquiry, inspection, sampling and re-performance.</p></div>
+<div class="process-card"><b>04</b><h3>Evaluate</h3><p>Exceptions, deficiencies and control effectiveness.</p></div>
+<div class="process-card"><b>05</b><h3>Report</h3><p>Findings, recommendations and follow-up.</p></div>
+</div>
+</div>
+</section>
 
-<section id="projects"><div class="wrap"><div class="section-top"><div class="kicker">05 / WORK SAMPLES</div><h2>Audit Projects &amp; Artifacts</h2><p class="lead">Illustrative, non-confidential examples. They should not be represented as client deliverables unless actually authorized.</p></div><div class="grid">
-<article class="card case"><span class="status">ILLUSTRATIVE</span><div class="num">ITGC / ACCESS</div><h3>Access Review Test</h3><p>JML considerations, privileged access, user population, reviewer evidence, exceptions and conclusion.</p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">View portfolio →</a></article>
-<article class="card case"><span class="status">ILLUSTRATIVE</span><div class="num">ITGC / CHANGE</div><h3>Change Management Test</h3><p>Change request, authorization, testing evidence, approval and production migration.</p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">View portfolio →</a></article>
-<article class="card case"><span class="status">ILLUSTRATIVE</span><div class="num">ITGC / OPERATIONS</div><h3>Backup &amp; Recovery Review</h3><p>Backup execution, monitoring, retention and recovery evidence considerations.</p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">View portfolio →</a></article>
-<article class="card case"><span class="status">ILLUSTRATIVE</span><div class="num">ITAC</div><h3>Automated Control Test Script</h3><p>Objective, population, test steps, evidence, exceptions and conclusion structure.</p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">View portfolio →</a></article>
-<article class="card case"><span class="status">ILLUSTRATIVE</span><div class="num">SOX 404</div><h3>SOX Control Testing</h3><p>Risk, control objective, test of design and test of operating effectiveness structure.</p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">View portfolio →</a></article>
-<article class="card case"><span class="status">ILLUSTRATIVE</span><div class="num">RISK / RCM</div><h3>Risk &amp; Control Matrix</h3><p>Risk-to-control mapping, evidence expectations, control owner and testing approach.</p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">View portfolio →</a></article>
-</div></div></section>
+<section class="projects" id="projects">
+<div class="container">
+<div class="section-head"><div class="label">05 / PORTFOLIO WORK</div><h2>Selected Audit Projects</h2><p class="lead">Illustrative, non-confidential work samples designed to demonstrate audit thinking and documentation skills.</p></div>
+<div class="grid">
+<div class="card project"><div class="project-type">ITGC / ACCESS</div><h3>Access Review Testing</h3><p>Sample-based user access review covering JML considerations, privileged access, reviewer evidence and exceptions.</p><div class="project-note">ILLUSTRATIVE WORK SAMPLE</div></div>
+<div class="card project"><div class="project-type">ITGC / CHANGE</div><h3>Change Management Testing</h3><p>Change request, authorization, testing evidence, approval and production migration control testing.</p><div class="project-note">ILLUSTRATIVE WORK SAMPLE</div></div>
+<div class="card project"><div class="project-type">ITGC / OPERATIONS</div><h3>Backup &amp; Recovery Review</h3><p>Review of backup execution, monitoring, retention and recovery evidence considerations.</p><div class="project-note">ILLUSTRATIVE WORK SAMPLE</div></div>
+<div class="card project"><div class="project-type">ITAC</div><h3>Automated Control Test Script</h3><p>Control objective, population, test steps, evidence, exceptions and conclusion structure.</p><div class="project-note">ILLUSTRATIVE WORK SAMPLE</div></div>
+<div class="card project"><div class="project-type">SOX 404</div><h3>SOX Control Testing</h3><p>Risk, control objective, test of design and test of operating effectiveness structure.</p><div class="project-note">ILLUSTRATIVE WORK SAMPLE</div></div>
+<div class="card project"><div class="project-type">RISK / RCM</div><h3>Risk &amp; Control Matrix</h3><p>Risk-to-control mapping, evidence expectations, control owner and testing approach.</p><div class="project-note">ILLUSTRATIVE WORK SAMPLE</div></div>
+</div>
+</div>
+</section>
 
-<section><div class="wrap"><div class="section-top"><div class="kicker">06 / FRAMEWORKS &amp; TOOLS</div><h2>Professional Toolkit</h2></div><div class="grid">
-<div class="card"><div class="num">FRAMEWORKS</div><h3>SOX 404 · COBIT · COSO · NIST</h3><p>Control, governance, risk and compliance concepts used to structure audit work.</p></div>
-<div class="card"><div class="num">STANDARDS</div><h3>ISO 27001 · SOC 1 · SOC 2</h3><p>Information security and service organization assurance concepts.</p></div>
-<div class="card"><div class="num">TECHNICAL</div><h3>Python · SQL · PostgreSQL</h3><p>Technical foundation supporting analysis, troubleshooting and data-oriented work.</p></div>
-<div class="card"><div class="num">ENGINEERING</div><h3>Jenkins · Wireshark · Linux</h3><p>Tools used in prior technical and troubleshooting activities.</p></div>
-<div class="card"><div class="num">AUDIT</div><h3>Evidence · Sampling · TOD · TOE</h3><p>Core concepts for control evaluation and testing documentation.</p></div>
-<div class="card"><div class="num">DOCUMENTATION</div><h3>RCM · Test Scripts · Findings</h3><p>Structured audit artifacts for risks, controls, procedures, evidence and conclusions.</p></div>
-</div></div></section>
+<section>
+<div class="container">
+<div class="section-head"><div class="label">06 / FRAMEWORKS &amp; TOOLS</div><h2>Professional Toolkit</h2></div>
+<div class="grid">
+<div class="card framework"><div class="icon">S</div><div><h3>SOX / SOX 404</h3><p>Internal control and IT-dependent control concepts.</p></div></div>
+<div class="card framework"><div class="icon">C</div><div><h3>COBIT</h3><p>IT governance and control framework concepts.</p></div></div>
+<div class="card framework"><div class="icon">C</div><div><h3>COSO</h3><p>Internal control framework concepts.</p></div></div>
+<div class="card framework"><div class="icon">N</div><div><h3>NIST</h3><p>Cybersecurity and risk management concepts.</p></div></div>
+<div class="card framework"><div class="icon">I</div><div><h3>ISO 27001</h3><p>Information security management concepts.</p></div></div>
+<div class="card framework"><div class="icon">SOC</div><div><h3>SOC 1 / SOC 2</h3><p>Service organization assurance concepts.</p></div></div>
+</div>
+<div class="tags" style="margin-top:22px">
+<span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">Jenkins</span><span class="tag">Wireshark</span><span class="tag">Linux</span><span class="tag">Access Management</span><span class="tag">Change Management</span><span class="tag">Internal Audit</span>
+</div>
+</div>
+</section>
 
-<section id="contact"><div class="wrap"><div class="section-top"><div class="kicker">07 / CONTACT</div><h2>Connect With Me</h2><p class="lead">For opportunities and professional discussions related to IT Audit, ITGC, ITAC, SOX and Internal Audit.</p></div><div class="contact">
-<div class="card"><h3>Professional Links</h3><p><a href="https://www.linkedin.com/in/manoj-kumar-maddirala-47537141/" target="_blank">LinkedIn ↗</a></p><p><a href="Manoj_Maddirala_Resume_Revised.pdf">Resume PDF ↗</a></p><p><a href="Manoj_Maddirala_IT_Audit_Portfolio.pdf">IT Audit Portfolio PDF ↗</a></p></div>
-<div class="card"><h3>Contact</h3><p><a href="mailto:manojitgc@gmail.com">manojitgc@gmail.com</a></p><p><a href="tel:+918897095983">+91 88970 95983</a></p><p>Mumbai, Maharashtra, India</p></div>
-</div></div></section>
-</main>
-<footer><div class="wrap"><span>© 2026 Manoj Maddirala</span><span>IT Audit • ITGC • ITAC • SOX Compliance</span></div></footer>
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-head"><div class="label">07 / CONTACT</div><h2>Let's Connect</h2><p class="lead">Open to professional opportunities and discussions around IT Audit, ITGC, ITAC and SOX controls.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><h3>Professional</h3><p><a href="https://www.linkedin.com/in/manoj-kumar-maddirala-47537141/" target="_blank">LinkedIn Profile ↗</a></p><p><a href="Manoj_Maddirala_Resume_Revised.pdf">Download Resume ↗</a></p></div>
+<div class="contact-card"><h3>Contact</h3><p><a href="mailto:manojitgc@gmail.com">manojitgc@gmail.com</a></p><p><a href="tel:+918897095983">+91 88970 95983</a></p><p>Mumbai, Maharashtra, India</p></div>
+</div>
+</div>
+</section>
+
+<footer><div class="container footer-inner"><span>© 2026 Manoj Maddirala</span><span>IT Audit • ITGC • ITAC • SOX Compliance</span></div></footer>
 </body>
 </html>
